@@ -40,12 +40,15 @@ function App() {
   return (
     <>  
     <Router>
+      {/* <Routes>
+        <Route path="/TextUtilz" element={<Navbar title="Text Utilz" mode={mode} toggleMode={toggleMode} ></Navbar>}/>
+      </Routes> */}
       <Navbar title="Text Utilz" mode={mode} toggleMode={toggleMode} ></Navbar>
       <Alerts alert={alert}/>
-        <Routes>
-          <Route path="/" element={textComp}></Route>
-          <Route path="/aboutus" element={<AboutUs mode={mode}/>}/>
-        </Routes>
+      <Routes>
+        <Route path="/TextUtilz" element={textComp}></Route>
+        <Route path="/aboutus" element={<AboutUs mode={mode}/>}/>
+      </Routes>
     </Router>
     </>
         
